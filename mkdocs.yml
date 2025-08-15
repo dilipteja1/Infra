@@ -1,0 +1,14 @@
+site_name: DuttLab Documentation
+site_url: https://duttlab.github.io/
+theme:
+  name: material
+  palette:
+    - dark
+    - default
+  features:
+    - navigation.tabs
+    - navigation.sections
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
