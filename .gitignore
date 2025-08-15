@@ -1,0 +1,7 @@
+poetry.lock
+__pycache__/
+.cache/
+.Python/
+.pytest_cache/
+.vscode/
+.DS_Store

@@ -2,13 +2,35 @@ site_name: DuttLab Documentation
 site_url: https://duttlab.github.io/
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
   palette:
-    - dark
-    - default
-  features:
-    - navigation.tabs
-    - navigation.sections
-nav:
-  - Home: index.md
-  - About: about.md
-  - Contact: contact.md
+    # dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+    # light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
