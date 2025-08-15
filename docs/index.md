@@ -1,23 +1,16 @@
-# Welcome to MkDocs
+# Welcome to Dutt lab Infra Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Dutt lab in Department of physics and Astronomy have infrastructure setup for the smooth functioning of the researchers of the group. 
 
-## Commands
+## Accessing Resources
+### Open Project
+Web UI: [http://192.168.2.60:8080](http://192.168.2.60:8080)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### NAS
+Web UI: [https://192.168.2.63](https://192.168.2.63)
 
-## Project layout
+!!! note "Accessibility over the Pitt Network"
+	Currently the services are only accessible over the Local network. Accessibility over Pitt network soon.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-
-```py title="code block" hl_lines="1" linenums="1"
-def codeExample(num1, num2):
-    return num1 + num2
-```
+### Mounting NAS
+Refer [Mounting NAS in different operating systems](nas/mount.md)
