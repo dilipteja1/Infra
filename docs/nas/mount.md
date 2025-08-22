@@ -2,7 +2,7 @@
 
 === "Windows"
    	1. Open File Explorer
-            	2. type "**//[NAS-IP](index.md###NAS)**" in the file explorer bar
+            	2. type "**//[NAS-IP]**" in the file explorer bar
          	3. provide the user name and password
 		1. If you dont have username and password, contact **Dr. Gurudev Dutt**
 === "Linux"

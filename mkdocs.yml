@@ -61,3 +61,6 @@ nav:
   - NAS:
     - installing TrueNAS scale : nas/installation.md
     - mounting NAS in your PC: nas/mount.md
+    - Automatic Backup to NAS: nas/backup.md
+  - Nextcloud:
+    - 
