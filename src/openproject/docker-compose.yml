@@ -28,17 +28,6 @@ x-op-app: &app
     - "${OPDATA:-opdata}:/var/openproject/assets"
 
 services:
-  db:
-    image: postgres:13
-    <<: *restart_policy
-    stop_grace_period: "3s"
-    volumes:
-      - "${PGDATA:-pgdata}:/var/lib/postgresql/data"
-    environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-p4ssw0rd}
-      POSTGRES_DB: openproject
-    networks:
-      - backend
 
   cache:
     image: memcached
@@ -67,7 +56,6 @@ services:
       - frontend
       - backend
     depends_on:
-      - db
       - cache
       - seeder
     labels:
@@ -94,7 +82,6 @@ services:
     networks:
       - backend
     depends_on:
-      - db
       - cache
       - seeder
 
@@ -104,7 +91,6 @@ services:
     networks:
       - backend
     depends_on:
-      - db
       - cache
       - seeder
 
